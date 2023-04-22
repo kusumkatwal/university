@@ -1,0 +1,639 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:wght@300&family=Roboto:wght@300&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Kanit', sans-serif;
+}
+/*styling info and log in sign up*/
+header{
+    height:50px;
+    background-color: rgb(43, 43, 91);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+/*info*/
+.left{
+   width:50%;
+   padding-left:100px;
+   }
+/*login sign up half*/
+.right{
+    width: 50%;
+    padding-left:600px;
+}
+.right a{
+    text-decoration: none;
+    color:white;
+    padding:20px;
+}
+.right a:hover{
+    color:rgb(111, 222, 222);
+}
+/*Styling navigation bar*/
+.navigation{
+    height:100px;
+    background-color: white;
+    position: sticky;
+    box-shadow: gainsboro 8px 8px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-items: center;
+}
+/*logo*/
+.navigation h2{
+    font-size: 33px;
+    width:40%;
+    padding-left:100px;
+    color:rgb(43, 43, 91);
+}
+.navigation h2 span{
+    font-weight: bold;
+}
+/*navigation panel half*/
+.nav-bar{
+    width: 60%;
+   
+}
+.nav-bar ul{
+    list-style-type: none;      
+}
+/*Styling each navigation link*/
+.nav-bar ul li{
+    display: inline-block;
+    padding:10px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding:15px;
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-bar ul li a .active{
+    background-color: white;
+    color:rgb(43, 43, 91);
+    font-weight: 100;
+}
+/*Styling apply now button*/
+.btn{
+    text-decoration: none;
+    background-color: rgb(43, 43, 91);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding:10px 25px;
+    color:white;
+    border: none;
+    border-radius:10px;
+}
+/*hover effect on navigation texts*/
+.nav-bar ul li a:hover{
+    background-color: white;
+    color:rgb(43, 43, 91);
+    font-weight: 100;
+   
+} 
+/*Button hover effext*/
+.btn:hover{
+    background-color: white;
+    color:rgb(43, 43, 91);
+    border-color:rgb(43, 43, 91);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 17px;
+}
+/*Backgroung*/
+.home{
+    height:650px;
+    background-image: url("./image/bg.jpg");
+    background-position:right;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+}
+/*text part*/
+.info{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:100%;
+    height:610px;
+    padding:20px;
+    background-image: linear-gradient( to right,
+    rgba(255,255,255,1),
+    rgba(255,255,255,.6),
+    rgba(255,255,255,.4),
+    rgba(255,255,255,.2),
+    rgba(255,255,255,0));
+
+}
+.info h1{
+    position: absolute;
+    top:150px;
+    left:150px;
+    font-size: 60px;
+    color:rgb(43, 43, 91);
+}
+/*Take a tour and get started button*/
+.button{
+    text-decoration: none;
+    background-color: rgb(43, 43, 91);
+    text-transform: uppercase;
+    font-family: 25px;
+    font-size: 15px;
+    color:white;
+    border: none;
+    border-radius:10px;
+    height:60px;
+    width:160px;
+   position:relative;
+   top:400px;
+   left:100px;
+   margin:20px;
+   text-align: center;  
+}
+.button:hover{
+    background-color: transparent;
+    color:rgb(43, 43, 91);
+    font-size:18px; border-color:rgb(43, 43, 91);
+    border-style: solid;
+    border-width: 2px;
+}
+.brochure{
+    height:300px;
+    background-color: aliceblue;
+    margin:auto;
+    padding-left:200px;
+    padding-right:200px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card1,.card2,.card3{
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    margin:20px;
+    padding:15px;
+}
+.card1{
+    background-color:rgb(248, 181, 56);
+    color:rgb(255, 201, 100);
+}
+.card3{
+    background-color: rgb(111, 222, 222);
+    color:rgb(111, 222, 222);
+}
+.card2{
+    background-color: rgb(85, 140, 242);
+    color: cornflowerblue;
+}
+.wrap{
+    color:white;
+    margin-left:5px;
+    font-size:25px;
+}
+.h4{
+    color:white;
+}
+.material-symbols-outlined{
+    background-color: white;
+    border-radius: 50px;
+    height:60px;
+    width:60px;
+    margin:0px 10px;
+    font-variation-settings: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.courses_heading{
+    height:350px;
+    background-image: url(./image/graduation.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.courses_heading h1{
+    height:120px;
+    background-image: linear-gradient( to right,
+    rgba(255,255,255,.4),
+    rgba(255,255,255,.4),
+    rgba(255,255,255,.4),
+    rgba(255,255,255,.4),
+    rgba(255,255,255,.4));
+    color:rgb(43, 43, 91);
+    padding:120px;
+    padding-left:300px;
+    font-size: 55px;
+    font-weight: bold;
+}
+.course_content h1,.p{
+    text-align: center;
+    margin:20px;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(43, 43, 91);
+}
+.course_content p{
+    font-size: 20px;
+    margin-top:-30px;
+}
+.btnpack{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.btnpack a{
+    text-decoration: none;
+    color:rgb(43, 43, 91);
+    background-color:ghostwhite;
+    padding:10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btnpack a:hover{
+    background-color: rgb(111, 222, 222);
+    color:white;
+    font-weight:lighter;
+    border-radius: 5px;
+}
+.course_details{
+    margin:auto;
+    padding:50px 150px;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.course{
+    height:550px;
+    width:350px;
+    background-color:ghostwhite;
+    margin:40px;
+    border-radius: 5px;
+}
+.course:hover{
+    padding:3px;
+    box-shadow: rgb(237, 237, 237) 8px 8px 8px;
+}
+.course img{
+    border-radius: 5px;
+}
+.course figcaption,p{
+    font-size: 15px;
+    padding:30px 40px;
+    font-weight: bold;
+    color:black;
+}
+.course h3{
+    padding-left: 40px;
+    font-size:20px;
+    font-weight: bolder;
+}
+.course a{
+    text-decoration: none;
+    color:white;
+    background-color:rgb(43, 43, 91);
+    padding:10px 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left:40px;
+    border-radius: 5px;
+    border:1px solid rgb(43, 43, 91);
+}
+.course a:hover{
+    background-color:ghostwhite;
+    color:rgb(43, 43, 91);
+}
+.nav-course{
+    text-decoration: none;
+    color:rgb(43, 43, 91);
+    background-color:ghostwhite;
+    padding:20px 30px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    width:200px;
+    margin:auto;
+    border: 1px solid rgb(43, 43, 91);
+}
+.nav-course:hover{
+    background-color:rgb(43, 43, 91) ;
+    color:white;
+}
+.events{
+    margin:auto;
+    padding-left:300px;
+    padding-right:300px;
+    display:flex;
+    flex-direction: column;
+
+}
+.event{
+    height:180px;
+    width:800px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin:40px;
+}
+.date1, .date2, .date3{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+.date1{
+    background-color: rgb(248, 181, 56);
+}
+.date2{
+    background-color: rgb(85, 140, 242);
+}
+.date3{
+    background-color:  rgb(111, 222, 222);
+}
+.date{
+    font-size: 40px;
+    font-weight: bold;
+}
+.details{
+    background-color: ghostwhite;
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:rgb(43, 43, 91);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.details h4{
+    font-size: 30px;
+    padding:20px;
+}
+.details ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding:10px;
+}
+.details ul li{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    align-items: center;
+}
+.latest_course{
+    background-image: url(./image/apply.jpg);
+    background-position: center;
+    background-size:cover;
+    height:700px;
+    margin:250px 0;
+}
+.latest_course_heading{
+    width:60%;
+    background-image: linear-gradient( to right,
+    rgba(43,43,91,.8),
+    rgba(43,43,91,.8),
+    rgba(43,43,91,.8),
+    rgba(43,43,91,.8),
+    rgba(43,43,91,.8));
+    height:600px;
+    padding:50px 100px;
+}
+.latest-heading,.latest{
+    color:white;
+    font-size: 33px;
+    text-align: center;
+    padding-top:30px;
+}
+.latest{
+    font-size: 20px;
+}
+.course_list{
+    display: flex;
+    flex-direction: row;
+    color:white;
+}
+.latest_course_details{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+    padding:20px 0px;
+}
+.latest_course_details span{
+    background-color: white;
+   font-size: 40px;
+   color:rgb(19, 19, 43);
+   font-weight: lighter;
+   margin:10px;
+}
+.latest_course_details h3{
+    font-size: 25px;
+}
+.latest_course_details p{
+    text-align: justify;
+    font-size: 18px;
+    color:white;
+}
+.latest_course_details a{
+    margin:40px;
+    background-color:transparent;
+    color:white;
+    font-size: 15px;
+    padding:10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border:1px solid white;
+    text-decoration: none;
+    width:100px;
+}
+.latest_course_details a:hover{
+    background-color: white;
+    color: rgb(19, 19, 43);
+    font-weight: bold;
+}
+.footer{
+     background-color: rgb(19, 19, 43);
+    color:white;
+    display: flex;
+    flex-direction: column;
+   padding-left:200px;
+   padding-right:200px;
+   text-decoration: none;
+}
+.footertop{
+  margin:60px;
+}
+.footertop h2{
+    padding-bottom:20px;
+}
+.footertop input{
+   
+    background-color: ghostwhite;
+    border: none;
+    font-size: 15px;
+    padding: 20px 80px;
+    text-align: left;
+}
+.subscribe{
+    text-decoration: none;
+    color:white;
+    background-color:rgb(111, 222, 222);
+    padding:20px 40px;
+    font-size: 15px;
+    border:none;
+    font-weight: bold;
+}
+.socials{
+    margin-left:50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+.socials li i{
+    padding:0px 30px 0px 30px;
+}
+.socials li a{
+    text-decoration: none;
+    color:white;
+}
+.socials li i:hover{
+    color:rgb(111, 222, 222);
+}
+.footertop ul{
+    list-style-type: none;
+   display: flex;
+   flex-direction: row;
+}
+.footertop ul li{
+   padding:20px 0px;
+}
+.footermid{
+    display: flex;
+    flex-direction: row;
+}
+.foot-left, .foot-mid,.foot-right{
+    margin:0 60px 30px 60px;
+}
+.footermid ul{
+    list-style-type: none;
+    color:rgb(143, 143, 144);
+    font-size: 18px;
+}
+.footermid ul li {
+    padding:15px 25px 15px 0px;
+}
+.footermid ul li a{
+    text-decoration: none;
+    color:white;
+}
+.footermid ul li a:hover{
+    color:rgb(111, 222, 222);
+}
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(111, 222, 222);
+    font-weight: lighter;
+}
+.apply_form{
+    margin:auto;
+    background-image: url(./image/main_background.jpg);
+    background-size:cover;
+    background-position: center;
+    color:white;
+    padding-left:200px;
+    padding-right:200px;
+}
+.apply_form form{
+    background-image: linear-gradient(to right,
+    rgb(19,19,43,.8),
+    rgb(19,19,43,.8),
+    rgb(19,19,43,.8),
+    rgb(19,19,43,.8));
+    padding:50px;
+    margin:60px;
+}
+.admission{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.field-set{
+    padding:20px;
+    margin-bottom:20px;
+}
+.form-field{
+    display:flex;
+    flex-direction: row;
+    padding:20px;
+}
+.input{
+    font-size:15px;
+    height:38px;
+    width:100%;
+    color:white;
+    background-color:transparent;
+    border:none;
+    border-bottom: 1px solid ghostwhite;
+   margin:30px;
+}
+label{
+    display: block;
+    padding:20px;
+}
+legend{
+    text-align: center;
+    font-size: 20px;
+}
+[type*="radio"],
+[type*="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+.sub-field{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    padding:0px;
+}
+.submit{
+    text-decoration: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 25px;
+    font-size: 15px;
+    color:white;
+    border: 1px solid white;
+    border-radius:10px;
+    padding:10px 20px;
+    margin:20px;
+}
+.submit:hover{
+    background-color: white;
+    color:rgb(19, 19, 43);
+}
+.error{
+    display: block;
+    color:ghostwhite;
+    font-size: 15px;
+    display: block;
+}
