@@ -7,6 +7,7 @@ let form = document.form,
 
 console.log(fname);
 //keyboard event
+//addEventLsitener- method 
 form.addEventListener("submit", function(event){
     if(fname.value.length == 0) {
         fname.nextElementSibling.innerText = "Full name is Empty.";
@@ -37,4 +38,12 @@ email.addEventListener("keyup", function(e){
     } else {
         this.nextElementSibling.innerText = " ";
     }
+});
+
+let course = document.querySelector(".course");
+let card = document.querySelector(".card");
+let hide = document.querySelector(".hide");
+
+card.addEventListener("onmouseover", () => {
+    course.classList.add(".movecourse");
 });
